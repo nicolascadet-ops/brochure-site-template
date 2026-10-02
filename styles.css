@@ -178,8 +178,12 @@ p { margin: 0; }
 
 /* People */
 .people { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
-.person img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(1) contrast(1.05); transition: filter .5s var(--ease); }
-.person:hover img { filter: none; }
+/* Initials instead of photos: swap a .monogram for an <img> when you have real portraits */
+.monogram { aspect-ratio: 4 / 5; display: grid; place-items: center; background: var(--stone-2); border-bottom: 2px solid var(--claret); transition: background .5s var(--ease), color .5s var(--ease); }
+.monogram span { font: 400 clamp(3.5rem, 7vw, 6rem)/1 var(--serif); letter-spacing: .02em; color: var(--ink); transition: color .5s var(--ease); }
+.person:hover .monogram { background: var(--claret); }
+.person:hover .monogram span { color: #fff; }
+.person img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .person h3 { margin-top: 20px; font-size: 26px; }
 .person .role { margin-top: 4px; font-size: 15px; color: var(--ink-3); }
 .person .bio { margin-top: 14px; font-size: 16px; color: var(--ink-2); }

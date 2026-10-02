@@ -110,7 +110,7 @@ components:
 
 **Creative North Star: "The Letterhead"**
 
-The site reads like a good firm's stationery: off-white paper, near-black ink, one deep claret, and big Caslon headings set with confidence. Authority comes from type scale and restraint, not ornament. Structure is drawn with hairline rules: lists, tables, quotes and contact details sit between thin lines rather than inside boxed cards. Photography is real places and real faces; portraits are greyscale at rest and take on colour on hover.
+The site reads like a good firm's stationery: off-white paper, near-black ink, one deep claret, and big Caslon headings set with confidence. Authority comes from type scale and restraint, not ornament. Structure is drawn with hairline rules: lists, tables, quotes and contact details sit between thin lines rather than inside boxed cards. Photography is real places; team members are shown as Caslon initials on stone tiles that turn claret on hover, until real portraits are added.
 
 Density is calm and generous. Sections breathe (128px vertical padding on desktop), copy runs in a measured column, and prices are stated openly in claret serif figures so the reader sees cost as a first-class fact. Motion is nearly absent: the only authored moment is the call-back card settling onto the hero photo on load. There are no scroll reveals.
 
@@ -225,8 +225,8 @@ Dark ink topbar (13px, hours and phone) above a sticky paper header with a 1px b
 ### Call-back Card (signature)
 A paper card with a short Caslon heading, one line of reassurance, and a three-field form, overlapping the hero photo. It is the site's only shadow and only authored animation: on load it rises 28px into place over 1.1s (0.25s delay, `--ease`) while its shadow develops. Disabled under `prefers-reduced-motion`.
 
-### Portraits
-4:5 crops, greyscale with slight contrast at rest; colour returns on hover over 0.5s.
+### Team tiles
+4:5 tiles in stone with a 2px claret base line and the person's initials in Libre Caslon Display; on hover the tile turns claret and the initials white over 0.5s. To use real portraits, replace the `.monogram` div with an `<img>` (4:5 crop); `.person img` already sizes it.
 
 ### Claret Band
 Full-bleed claret closing section: large white Caslon heading, petal body text, and actions aligned right (left below 820px).
@@ -237,7 +237,7 @@ Full-bleed claret closing section: large white Caslon heading, petal body text, 
 - **Do** retheme through the `:root` custom properties in `styles.css`; keep a single accent.
 - **Do** state prices in claret Caslon wherever a service is named.
 - **Do** separate items with 1px rules and an ink top rule instead of boxing them.
-- **Do** use real photographs of places and people; keep portraits greyscale-to-colour.
+- **Do** use real photographs of places, and real portraits only of people who agreed to appear.
 - **Do** keep buttons, form fields and the menu toggle at least 48px tall and keep the claret focus outline.
 - **Do** keep motion to the single call-back settle (behind `prefers-reduced-motion`) and small hover nudges.
 

@@ -55,7 +55,7 @@ No build step needed.
 ## Credits
 
 - Typefaces: [Libre Caslon Display](https://fonts.google.com/specimen/Libre+Caslon+Display) and [Public Sans](https://fonts.google.com/specimen/Public+Sans), SIL Open Font License.
-- Photos from [Unsplash](https://unsplash.com), free under the [Unsplash License](https://unsplash.com/license). Portraits are sample stock photos of models, not real solicitors.
+- Photos from [Unsplash](https://unsplash.com), free under the [Unsplash License](https://unsplash.com/license). Team members are shown as initials; replace them with real portraits of your team.
 
   | File | Photographer | Source |
   |---|---|---|
@@ -63,10 +63,6 @@ No build step needed.
   | `images/hero-mobile.webp` | Alex Wicks | https://images.unsplash.com/photo-1781370163418-e02a602826c2 (top crop) |
   | `images/building.webp` | Anastasiia Derkunskaia | https://images.unsplash.com/photo-1763725908870-a25a4c0b2f22 |
   | `images/office.webp` | Markus Leo | https://images.unsplash.com/photo-1566796096874-dd14890c80b4 |
-  | `images/eleanor.webp` | Tony Luginsland | https://images.unsplash.com/photo-1655249481446-25d575f1c054 |
-  | `images/priya.webp` | Tony Luginsland | https://images.unsplash.com/photo-1655249493799-9cee4fe983bb |
-  | `images/james.webp` | Tony Luginsland | https://images.unsplash.com/photo-1652471943570-f3590a4e52ed |
-  | `images/daniel.webp` | Adam Palicz | https://images.unsplash.com/photo-1746954412182-e97488254ffc |
 
 - Built by **NC Atelier**.
 
