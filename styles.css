@@ -183,7 +183,8 @@ p { margin: 0; }
 .person h3 { margin-top: 20px; font-size: 26px; }
 .person .role { margin-top: 4px; font-size: 15px; color: var(--ink-3); }
 .person .bio { margin-top: 14px; font-size: 16px; color: var(--ink-2); }
-.person .contact { margin-top: 14px; font-size: 15px; display: grid; gap: 2px; }
+.person .contact { margin-top: 14px; font-size: 15px; display: grid; gap: 2px; overflow-wrap: anywhere; }
+.person { min-width: 0; }
 @media (max-width: 960px) { .people { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .people { gap: 24px 16px; } .person h3 { font-size: 21px; } .person .bio { font-size: 15px; } }
 
