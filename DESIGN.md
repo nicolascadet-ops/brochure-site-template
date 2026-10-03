@@ -114,7 +114,7 @@ The site reads like a good firm's stationery: off-white paper, near-black ink, o
 
 Density is calm and generous. Sections breathe (128px vertical padding on desktop), copy runs in a measured column, and prices are stated openly in claret serif figures so the reader sees cost as a first-class fact. Motion is nearly absent: the only authored moment is the call-back card settling onto the hero photo on load. There are no scroll reveals.
 
-To customise the template, change the custom properties at the top of `styles.css`. The palette, both typefaces and the container width live there; everything else reads from them.
+To customise the template, change the custom properties at the top of `public/styles.css`. The palette, both typefaces and the container width live there; everything else reads from them.
 
 **Key Characteristics:**
 - Paper and stone grounds, ink text, a single claret accent for actions, prices and the closing band.
@@ -142,7 +142,7 @@ A warm neutral paper system with one dark wine accent; colour is scarce so that 
 - **White**: input fields and jump links sit on pure white so they lift slightly off paper.
 
 ### Feedback
-- **Error** (#a3261b) and **Success** (#1f6b3a) are used only for form validation messages and borders. They are hard-coded in `styles.css`, not custom properties.
+- **Error** (#a3261b) and **Success** (#1f6b3a) are used only for form validation messages and borders. They are hard-coded in `public/styles.css`, not custom properties.
 
 ### Named Rules
 **The One Accent Rule.** Claret is the only chromatic colour. It marks actions, prices and the closing band; it is never used for decorative fills, icons-for-effect, or body text.
@@ -154,7 +154,7 @@ A warm neutral paper system with one dark wine accent; colour is scarce so that 
 **Display Font:** Libre Caslon Display (with Iowan Old Style, Georgia, serif)
 **Body Font:** Public Sans (with ui-sans-serif, system-ui, Segoe UI, sans-serif)
 
-**Character:** A high-contrast Caslon display cut at weight 400 against a plain, civic sans. The serif carries the voice; the sans stays out of the way. Both are self-hosted in `fonts/`.
+**Character:** A high-contrast Caslon display cut at weight 400 against a plain, civic sans. The serif carries the voice; the sans stays out of the way. Both are self-hosted in `public/fonts/`.
 
 ### Hierarchy
 - **Display** (400, clamp(3rem, 7.4vw, 6rem), 1.08): home hero headline only, max 13ch. Inner-page intros use clamp(2.8rem, 6vw, 5.2rem) at 14ch.
@@ -234,7 +234,7 @@ Full-bleed claret closing section: large white Caslon heading, petal body text, 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** retheme through the `:root` custom properties in `styles.css`; keep a single accent.
+- **Do** retheme through the `:root` custom properties in `public/styles.css`; keep a single accent.
 - **Do** state prices in claret Caslon wherever a service is named.
 - **Do** separate items with 1px rules and an ink top rule instead of boxing them.
 - **Do** use real photographs of places, and real portraits only of people who agreed to appear.

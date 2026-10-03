@@ -10,11 +10,11 @@ A five-page brochure website for a law firm, accountancy, consultancy or any pro
 
 | Page | What's on it |
 |---|---|
-| `index.html` | Headline, call-back form over a full-width photo, practice areas, why choose us, client reviews, partners |
-| `services.html` | One section per service with fixed fees, what's included and FAQs, plus a fee table |
-| `about.html` | Firm story, values and a timeline |
-| `team.html` | Partner profiles with bios and direct contact details |
-| `contact.html` | Consultation request form, address, hours and transport |
+| `public/index.html` | Headline, call-back form over a full-width photo, practice areas, why choose us, client reviews, partners |
+| `public/services.html` | One section per service with fixed fees, what's included and FAQs, plus a fee table |
+| `public/about.html` | Firm story, values and a timeline |
+| `public/team.html` | Partner profiles with bios and direct contact details |
+| `public/contact.html` | Consultation request form, address, hours and transport |
 
 ## Features
 
@@ -27,20 +27,20 @@ A five-page brochure website for a law firm, accountancy, consultancy or any pro
 
 ## Run it locally
 
-Open `index.html` in your browser, or serve the folder:
+Open `public/index.html` in your browser, or serve the `public` folder:
 
 ```bash
-npx serve .
+npx serve public
 ```
 
 ## Customise
 
 | What | Where |
 |---|---|
-| Colours and fonts | CSS variables in `:root` at the top of `styles.css` |
+| Colours and fonts | CSS variables in `:root` at the top of `public/styles.css` |
 | Firm name, phone, address | Header and footer in each `.html` file (search for "Hartley") |
-| Photos | Replace files in `images/` (keep the same names, or update the `src`) |
-| Form handling | `main.js` (currently shows a demo confirmation). Point the forms at Formspree, Netlify Forms, Cloudflare Workers or your CRM |
+| Photos | Replace files in `public/images/` (keep the same names, or update the `src`) |
+| Form handling | `public/main.js` (currently shows a demo confirmation). Point the forms at Formspree, Netlify Forms, Cloudflare Workers or your CRM |
 
 ## Deploy to Cloudflare Pages
 
@@ -59,10 +59,10 @@ No build step needed.
 
   | File | Photographer | Source |
   |---|---|---|
-  | `images/hero.webp` | Alex Wicks | https://images.unsplash.com/photo-1781370163418-e02a602826c2 |
-  | `images/hero-mobile.webp` | Alex Wicks | https://images.unsplash.com/photo-1781370163418-e02a602826c2 (top crop) |
-  | `images/building.webp` | Anastasiia Derkunskaia | https://images.unsplash.com/photo-1763725908870-a25a4c0b2f22 |
-  | `images/office.webp` | Markus Leo | https://images.unsplash.com/photo-1566796096874-dd14890c80b4 |
+  | `public/images/hero.webp` | Alex Wicks | https://images.unsplash.com/photo-1781370163418-e02a602826c2 |
+  | `public/images/hero-mobile.webp` | Alex Wicks | https://images.unsplash.com/photo-1781370163418-e02a602826c2 (top crop) |
+  | `public/images/building.webp` | Anastasiia Derkunskaia | https://images.unsplash.com/photo-1763725908870-a25a4c0b2f22 |
+  | `public/images/office.webp` | Markus Leo | https://images.unsplash.com/photo-1566796096874-dd14890c80b4 |
 
 - Built by **NC Atelier**.
 
